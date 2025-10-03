@@ -1,0 +1,22 @@
+python3 -m venv venv
+
+# Activate it:
+# On Mac/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# Install dependencies:
+pip install -r requirements.txt
+
+python server.py
+
+Test MCP Server (in new terminal):
+curl http://localhost:3001/health
+
+
+Setup Cache Directory (2 minutes)
+mkdir -p /tmp/n8n_cache
+
+# Set permissions (Mac/Linux)
+chmod 777 /tmp/n8n_cache
